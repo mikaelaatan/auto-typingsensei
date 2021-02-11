@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 import random
 import pickle
-    
+
 
 # browser = webdriver.Chrome()
 # browser.get(('http://typingsensei.com/play'))
@@ -15,7 +15,7 @@ import pickle
 options = webdriver.ChromeOptions()
 # capability = DesiredCapabilities.CHROME
 # capability["pageLoadStrategy"] = "normal"
-options.add_argument('user-data-dir=selenium0') 
+options.add_argument('user-data-dir=selenium0')
 options.add_argument('ignore-certificate-errors')
 options.add_experimental_option("detach", True)
 options.add_argument("enable-javascript")
@@ -35,8 +35,11 @@ cookieC.click()
 
 time.sleep(2)
 
-emailID = "mikaela2000@macr2.com"
-passW = "password"
+## change <YOUR USERNAME HERE> to your email or username, without brackets
+## change <YOUR PASSWORD HERE> to your password, without brackets
+
+emailID = "<YOUR USERNAME HERE>"
+passW = "<YOUR PASSWORD HERE>"
 
 username = browser.find_element_by_id('email')
 username.send_keys(emailID)
